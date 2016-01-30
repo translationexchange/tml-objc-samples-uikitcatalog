@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use UIWebView.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLWebViewController : UIViewController
+@interface AAPLWebViewController : ATMLViewController
 @end

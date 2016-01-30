@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use a default UIToolbar.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLDefaultToolbarViewController : UIViewController
+@interface AAPLDefaultToolbarViewController : ATMLViewController
 @end

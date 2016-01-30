@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use UIImageView.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLImageViewController : UIViewController
+@interface AAPLImageViewController : ATMLViewController
 @end

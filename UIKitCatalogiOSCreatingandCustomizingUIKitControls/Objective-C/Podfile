@@ -1,0 +1,13 @@
+xcodeproj 'UIKitCatalog.xcodeproj'
+
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'UIKitCatalog' do
+    #pod 'TMLKit', '~> 0.3.0'
+    #pod 'TMLKit', :git => 'git@github.com:translationexchange/tml-objc.git'
+    pod 'TMLKit', :path => '~/Source/TranslationExchange/tml-objc/TMLKit.podspec'
+end
+

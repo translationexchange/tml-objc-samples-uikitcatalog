@@ -10,8 +10,12 @@
 
 #import "AAPLAppDelegate.h"
 
+#define MyApplicationKey @""
+#define MyAccessToken @""
+
 int main(int argc, char *argv[]) {
     @autoreleasepool {
+        [TML sharedInstanceWithApplicationKey:MyApplicationKey accessToken:MyAccessToken];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AAPLAppDelegate class]));
     }
 }

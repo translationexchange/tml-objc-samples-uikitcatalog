@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use UITextField.
 */
 
+#import "ATMLTableViewController.h"
+
 @import UIKit;
 
-@interface AAPLTextFieldViewController : UITableViewController
+@interface AAPLTextFieldViewController : ATMLTableViewController
 @end

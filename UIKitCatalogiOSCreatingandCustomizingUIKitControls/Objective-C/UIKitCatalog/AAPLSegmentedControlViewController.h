@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use UISegmentedControl.
 */
 
+#import "ATMLTableViewController.h"
+
 @import UIKit;
 
-@interface AAPLSegmentedControlViewController : UITableViewController
+@interface AAPLSegmentedControlViewController : ATMLTableViewController
 @end

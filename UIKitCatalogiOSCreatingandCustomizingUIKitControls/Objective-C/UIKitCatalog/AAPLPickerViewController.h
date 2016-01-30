@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use UIPickerView.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLPickerViewController : UIViewController
+@interface AAPLPickerViewController : ATMLViewController
 @end

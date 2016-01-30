@@ -6,7 +6,9 @@
     A view controller that demonstrates how to customize a UIToolbar.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLCustomToolbarViewController : UIViewController
+@interface AAPLCustomToolbarViewController : ATMLViewController
 @end

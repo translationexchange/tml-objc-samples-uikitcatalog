@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use a default UISearchBar.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLDefaultSearchBarViewController : UIViewController
+@interface AAPLDefaultSearchBarViewController : ATMLViewController
 @end

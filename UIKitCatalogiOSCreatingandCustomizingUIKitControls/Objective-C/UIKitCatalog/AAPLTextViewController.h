@@ -6,7 +6,9 @@
     A view controller that demonstrates how to use UITextView.
 */
 
+#import "ATMLViewController.h"
+
 @import UIKit;
 
-@interface AAPLTextViewController : UIViewController
+@interface AAPLTextViewController : ATMLViewController
 @end
