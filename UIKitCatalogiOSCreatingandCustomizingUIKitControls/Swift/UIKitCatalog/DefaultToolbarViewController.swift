@@ -36,7 +36,7 @@ class DefaultToolbarViewController: UIViewController {
     // MARK: UIBarButtonItem Creation and Configuration
 
     var trashBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .Trash, target: self, action: "barButtonItemClicked:")
+        return UIBarButtonItem(barButtonSystemItem: .Trash, target: self, action: #selector(DefaultToolbarViewController.barButtonItemClicked(_:)))
     }
 
     var flexibleSpaceBarButtonItem: UIBarButtonItem {
@@ -46,7 +46,7 @@ class DefaultToolbarViewController: UIViewController {
     var customTitleBarButtonItem: UIBarButtonItem {
         let customTitle = NSLocalizedString("Action", comment: "")
 
-        return UIBarButtonItem(title: customTitle, style: .Plain, target: self, action: "barButtonItemClicked:")
+        return UIBarButtonItem(title: customTitle, style: .Plain, target: self, action: #selector(DefaultToolbarViewController.barButtonItemClicked(_:)))
     }
 
     // MARK: Actions

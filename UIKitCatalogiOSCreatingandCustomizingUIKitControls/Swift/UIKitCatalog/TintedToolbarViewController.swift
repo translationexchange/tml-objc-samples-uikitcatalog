@@ -42,7 +42,7 @@ class TintedToolbarViewController: UIViewController {
     // MARK: UIBarButtonItem Creation and Configuration
 
     var refreshBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "barButtonItemClicked:")
+        return UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: #selector(TintedToolbarViewController.barButtonItemClicked(_:)))
     }
 
     var flexibleSpaceBarButtonItem: UIBarButtonItem {
@@ -51,7 +51,7 @@ class TintedToolbarViewController: UIViewController {
     }
 
     var actionBarButtonItem: UIBarButtonItem {
-        return UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "barButtonItemClicked:")
+        return UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: #selector(TintedToolbarViewController.barButtonItemClicked(_:)))
     }
 
     // MARK: Actions

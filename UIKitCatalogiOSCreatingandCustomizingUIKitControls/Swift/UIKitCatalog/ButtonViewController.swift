@@ -41,19 +41,19 @@ class ButtonViewController: UITableViewController {
 
         systemTextButton.setTitle(buttonTitle, forState: .Normal)
 
-        systemTextButton.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
+        systemTextButton.addTarget(self, action: #selector(ButtonViewController.buttonClicked(_:)), forControlEvents: .TouchUpInside)
     }
 
     func configureSystemContactAddButton() {
         systemContactAddButton.backgroundColor = UIColor.clearColor()
 
-        systemContactAddButton.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
+        systemContactAddButton.addTarget(self, action: #selector(ButtonViewController.buttonClicked(_:)), forControlEvents: .TouchUpInside)
     }
 
     func configureSystemDetailDisclosureButton() {
         systemDetailDisclosureButton.backgroundColor = UIColor.clearColor()
 
-        systemDetailDisclosureButton.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
+        systemDetailDisclosureButton.addTarget(self, action: #selector(ButtonViewController.buttonClicked(_:)), forControlEvents: .TouchUpInside)
     }
 
     func configureImageButton() {
@@ -70,7 +70,7 @@ class ButtonViewController: UITableViewController {
         // Add an accessibility label to the image.
         imageButton.accessibilityLabel = NSLocalizedString("X Button", comment: "")
 
-        imageButton.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
+        imageButton.addTarget(self, action: #selector(ButtonViewController.buttonClicked(_:)), forControlEvents: .TouchUpInside)
     }
 
     func configureAttributedTextSystemButton() {
@@ -92,7 +92,7 @@ class ButtonViewController: UITableViewController {
         let highlightedAttributedTitle = NSAttributedString(string: buttonTitle, attributes: highlightedTitleAttributes)
         attributedTextButton.setAttributedTitle(highlightedAttributedTitle, forState: .Highlighted)
 
-        attributedTextButton.addTarget(self, action: "buttonClicked:", forControlEvents: .TouchUpInside)
+        attributedTextButton.addTarget(self, action: #selector(ButtonViewController.buttonClicked(_:)), forControlEvents: .TouchUpInside)
     }
 
     // MARK: Actions

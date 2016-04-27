@@ -42,14 +42,14 @@ class StepperViewController: UITableViewController {
         defaultStepper.stepValue = 1
 
         defaultStepperLabel.text = "\(Int(defaultStepper.value))"
-        defaultStepper.addTarget(self, action: "stepperValueDidChange:", forControlEvents: .ValueChanged)
+        defaultStepper.addTarget(self, action: #selector(StepperViewController.stepperValueDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     func configureTintedStepper() {
         tintedStepper.tintColor = UIColor.applicationBlueColor
 
         tintedStepperLabel.text = "\(Int(tintedStepper.value))"
-        tintedStepper.addTarget(self, action: "stepperValueDidChange:", forControlEvents: .ValueChanged)
+        tintedStepper.addTarget(self, action: #selector(StepperViewController.stepperValueDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     func configureCustomStepper() {
@@ -79,7 +79,7 @@ class StepperViewController: UITableViewController {
         customStepper.setDecrementImage(stepperDecrementImage, forState: .Normal)
 
         customStepperLabel.text = "\(Int(customStepper.value))"
-        customStepper.addTarget(self, action: "stepperValueDidChange:", forControlEvents: .ValueChanged)
+        customStepper.addTarget(self, action: #selector(StepperViewController.stepperValueDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     // MARK: Actions

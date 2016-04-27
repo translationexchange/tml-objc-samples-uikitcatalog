@@ -30,9 +30,9 @@ class TextViewController: UIViewController, UITextViewDelegate {
         // Listen for changes to keyboard visibility so that we can adjust the text view accordingly.
         let notificationCenter = NSNotificationCenter.defaultCenter()
 
-        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(TextViewController.handleKeyboardNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
         
-        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(TextViewController.handleKeyboardNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
     }
 
     override func viewDidDisappear(animated: Bool) {
@@ -147,7 +147,7 @@ class TextViewController: UIViewController, UITextViewDelegate {
             Provide a "Done" button for the user to select to signify completion 
             with writing text in the text view.
         */
-        let doneBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "doneBarButtonItemClicked")
+        let doneBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(TextViewController.doneBarButtonItemClicked))
 
         navigationItem.setRightBarButtonItem(doneBarButtonItem, animated: true)
     }

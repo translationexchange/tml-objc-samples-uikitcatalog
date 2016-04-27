@@ -49,7 +49,7 @@ class PageControlViewController: UIViewController {
         pageControl.pageIndicatorTintColor = UIColor.applicationGreenColor
         pageControl.currentPageIndicatorTintColor = UIColor.applicationPurpleColor
 
-        pageControl.addTarget(self, action: "pageControlValueDidChange", forControlEvents: .ValueChanged)
+        pageControl.addTarget(self, action: #selector(PageControlViewController.pageControlValueDidChange), forControlEvents: .ValueChanged)
     }
 
     // MARK: Actions

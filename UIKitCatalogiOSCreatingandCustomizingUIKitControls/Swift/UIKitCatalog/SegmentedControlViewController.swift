@@ -37,7 +37,7 @@ class SegmentedControlViewController: UITableViewController {
 
         defaultSegmentedControl.setEnabled(false, forSegmentAtIndex: 0)
 
-        defaultSegmentedControl.addTarget(self, action: "selectedSegmentDidChange:", forControlEvents: .ValueChanged)
+        defaultSegmentedControl.addTarget(self, action: #selector(SegmentedControlViewController.selectedSegmentDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     func configureTintedSegmentedControl() {
@@ -45,7 +45,7 @@ class SegmentedControlViewController: UITableViewController {
 
         tintedSegmentedControl.selectedSegmentIndex = 1
 
-        tintedSegmentedControl.addTarget(self, action: "selectedSegmentDidChange:", forControlEvents: .ValueChanged)
+        tintedSegmentedControl.addTarget(self, action: #selector(SegmentedControlViewController.selectedSegmentDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     func configureCustomSegmentsSegmentedControl() {
@@ -71,7 +71,7 @@ class SegmentedControlViewController: UITableViewController {
 
         customSegmentsSegmentedControl.selectedSegmentIndex = 0
 
-        customSegmentsSegmentedControl.addTarget(self, action: "selectedSegmentDidChange:", forControlEvents: .ValueChanged)
+        customSegmentsSegmentedControl.addTarget(self, action: #selector(SegmentedControlViewController.selectedSegmentDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
 
@@ -108,7 +108,7 @@ class SegmentedControlViewController: UITableViewController {
         ]
         customBackgroundSegmentedControl.setTitleTextAttributes(highlightedTextAttributes, forState: .Highlighted)
 
-        customBackgroundSegmentedControl.addTarget(self, action: "selectedSegmentDidChange:", forControlEvents: .ValueChanged)
+        customBackgroundSegmentedControl.addTarget(self, action: #selector(SegmentedControlViewController.selectedSegmentDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     // MARK: Actions

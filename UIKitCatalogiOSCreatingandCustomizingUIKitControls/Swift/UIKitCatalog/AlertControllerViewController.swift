@@ -158,7 +158,7 @@ class AlertControllerViewController : UITableViewController {
                 action's enabled property based on whether the user has entered a sufficiently
                 secure entry.
             */
-            NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleTextFieldTextDidChangeNotification:", name: UITextFieldTextDidChangeNotification, object: textField)
+            NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AlertControllerViewController.handleTextFieldTextDidChangeNotification(_:)), name: UITextFieldTextDidChangeNotification, object: textField)
             
             textField.secureTextEntry = true
         }

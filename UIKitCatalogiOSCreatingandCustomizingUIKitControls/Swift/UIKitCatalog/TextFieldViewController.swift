@@ -39,9 +39,9 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         // Listen for changes to keyboard visibility so that we can adjust the text view accordingly.
         let notificationCenter = NSNotificationCenter.defaultCenter()
 
-        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillShowNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(TextFieldViewController.handleKeyboardNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
 
-        notificationCenter.addObserver(self, selector: "handleKeyboardNotification:", name: UIKeyboardWillHideNotification, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(TextFieldViewController.handleKeyboardNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -107,7 +107,7 @@ class TextFieldViewController: UITableViewController, UITextFieldDelegate {
         purpleImageButton.bounds = CGRect(x: 0, y: 0, width: purpleImage.size.width, height: purpleImage.size.height)
         purpleImageButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 5)
         purpleImageButton.setImage(purpleImage, forState: .Normal)
-        purpleImageButton.addTarget(self, action: "customTextFieldPurpleButtonClicked", forControlEvents: .TouchUpInside)
+        purpleImageButton.addTarget(self, action: #selector(TextFieldViewController.customTextFieldPurpleButtonClicked), forControlEvents: .TouchUpInside)
         customTextField.rightView = purpleImageButton
         customTextField.rightViewMode = .Always
 

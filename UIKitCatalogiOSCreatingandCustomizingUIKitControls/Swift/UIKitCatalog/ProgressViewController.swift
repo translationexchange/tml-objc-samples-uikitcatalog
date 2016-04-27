@@ -74,7 +74,7 @@ class ProgressViewController: UITableViewController {
             a repeating timer to increment it over time.
         */
         progress.completedUnitCount = 0
-        updateTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timerDidFire", userInfo: nil, repeats: true)
+        updateTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(ProgressViewController.timerDidFire), userInfo: nil, repeats: true)
     }
     
     override func viewDidDisappear(animated: Bool) {

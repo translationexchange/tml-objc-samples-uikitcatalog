@@ -41,7 +41,7 @@ class CustomToolbarViewController: UIViewController {
     var customImageBarButtonItem: UIBarButtonItem {
         let customBarButtonItemImage = UIImage(named: "tools_icon")
 
-        let customImageBarButtonItem = UIBarButtonItem(image: customBarButtonItemImage, style: .Plain, target: self, action: "barButtonItemClicked:")
+        let customImageBarButtonItem = UIBarButtonItem(image: customBarButtonItemImage, style: .Plain, target: self, action: #selector(CustomToolbarViewController.barButtonItemClicked(_:)))
 
         customImageBarButtonItem.tintColor = UIColor.applicationPurpleColor
 
@@ -54,7 +54,7 @@ class CustomToolbarViewController: UIViewController {
     }
 
     var customBarButtonItem: UIBarButtonItem {
-        let barButtonItem = UIBarButtonItem(title: NSLocalizedString("Button", comment: ""), style: .Plain, target: self, action: "barButtonItemClicked:")
+        let barButtonItem = UIBarButtonItem(title: NSLocalizedString("Button", comment: ""), style: .Plain, target: self, action: #selector(CustomToolbarViewController.barButtonItemClicked(_:)))
 
         let backgroundImage = UIImage(named: "WhiteButton")
         barButtonItem.setBackgroundImage(backgroundImage, forState: .Normal, barMetrics: .Default)

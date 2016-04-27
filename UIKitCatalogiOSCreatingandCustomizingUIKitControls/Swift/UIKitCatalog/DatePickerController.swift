@@ -55,7 +55,7 @@ class DatePickerController: UIViewController {
 
         datePicker.minuteInterval = 2
 
-        datePicker.addTarget(self, action: "updateDatePickerLabel", forControlEvents: .ValueChanged)
+        datePicker.addTarget(self, action: #selector(DatePickerController.updateDatePickerLabel), forControlEvents: .ValueChanged)
 
         updateDatePickerLabel()
     }

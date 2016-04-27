@@ -35,14 +35,14 @@ class SliderViewController: UITableViewController {
         defaultSlider.value = 42
         defaultSlider.continuous = true
 
-        defaultSlider.addTarget(self, action: "sliderValueDidChange:", forControlEvents: .ValueChanged)
+        defaultSlider.addTarget(self, action: #selector(SliderViewController.sliderValueDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     func configureTintedSlider() {
         tintedSlider.minimumTrackTintColor = UIColor.applicationBlueColor
         tintedSlider.maximumTrackTintColor = UIColor.applicationPurpleColor
 
-        tintedSlider.addTarget(self, action: "sliderValueDidChange:", forControlEvents: .ValueChanged)
+        tintedSlider.addTarget(self, action: #selector(SliderViewController.sliderValueDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     func configureCustomSlider() {
@@ -60,7 +60,7 @@ class SliderViewController: UITableViewController {
         customSlider.continuous = false
         customSlider.value = 84
 
-        customSlider.addTarget(self, action: "sliderValueDidChange:", forControlEvents: .ValueChanged)
+        customSlider.addTarget(self, action: #selector(SliderViewController.sliderValueDidChange(_:)), forControlEvents: .ValueChanged)
     }
 
     // MARK: Actions
