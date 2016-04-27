@@ -40,7 +40,6 @@
 		535682BD18F3670300BAAD62 /* AAPLTintedToolbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A218F3670300BAAD62 /* AAPLTintedToolbarViewController.m */; };
 		535682BE18F3670300BAAD62 /* AAPLWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A418F3670300BAAD62 /* AAPLWebViewController.m */; };
 		535682BF18F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m in Sources */ = {isa = PBXBuildFile; fileRef = 535682A618F3670300BAAD62 /* UIColor+AAPLApplicationSpecific.m */; };
-		53874F9918F36B1800510922 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53874F9718F36B1800510922 /* Localizable.strings */; };
 		56D5EF06D467DB48CB47A74B /* libPods-UIKitCatalog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6982A53A30B7E2D30D4B52B /* libPods-UIKitCatalog.a */; };
 		B5C300DF1B0FC4F1003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DE1B0FC4F1003B05A0 /* LaunchScreen.storyboard */; };
 		B5C805741B1A7BDE00C110F1 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C805721B1A7BDE00C110F1 /* Search.storyboard */; };
@@ -387,7 +386,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53874F9918F36B1800510922 /* Localizable.strings in Resources */,
 				B5C300DF1B0FC4F1003B05A0 /* LaunchScreen.storyboard in Resources */,
 				5356825918F3656900BAAD62 /* Images.xcassets in Resources */,
 				3EC13ADE1933D95700915353 /* Main.storyboard in Resources */,
