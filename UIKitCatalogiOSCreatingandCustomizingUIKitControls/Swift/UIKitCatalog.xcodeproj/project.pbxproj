@@ -41,9 +41,12 @@
 		B50F41081B1D284700E5147D /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50F41071B1D284700E5147D /* StackViewController.swift */; };
 		B51AD3F91B1A8A6A00083F63 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51AD3F71B1A8A6A00083F63 /* Search.storyboard */; };
 		B5C300DD1B0FC458003B05A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */; };
+		B90B083765E79C7C53BCB6C6 /* Pods_UIKitCatalog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F02ECCD470FAFDE3061558A /* Pods_UIKitCatalog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F02ECCD470FAFDE3061558A /* Pods_UIKitCatalog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIKitCatalog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13972DBA725848AEA70D6602 /* Pods-UIKitCatalog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCatalog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIKitCatalog/Pods-UIKitCatalog.debug.xcconfig"; sourceTree = "<group>"; };
 		2200541A18BC54E8002A6E8B /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		2200541B18BC54E8002A6E8B /* AlertControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AlertControllerViewController.swift; sourceTree = "<group>"; };
 		2200541C18BC54E8002A6E8B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +81,11 @@
 		3E6AE853196B39350062A3E1 /* SearchShowResultsInSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchShowResultsInSourceViewController.swift; sourceTree = "<group>"; };
 		3E6AE855196B3B490062A3E1 /* SearchPresentOverNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresentOverNavigationBarViewController.swift; sourceTree = "<group>"; };
 		3E6AE859196B3BBC0062A3E1 /* SearchBarEmbeddedInNavigationBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBarEmbeddedInNavigationBarViewController.swift; sourceTree = "<group>"; };
+		75C226EDBD76FD224D0FB2BC /* Pods-UIKitCatalog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIKitCatalog.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIKitCatalog/Pods-UIKitCatalog.release.xcconfig"; sourceTree = "<group>"; };
 		B50F41071B1D284700E5147D /* StackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		B51AD3F81B1A8A6A00083F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		B5C300DC1B0FC458003B05A0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C474362F1CD17FF4002A09F5 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "UIKitCatalog/Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90B083765E79C7C53BCB6C6 /* Pods_UIKitCatalog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,9 +103,12 @@
 		228DB9EA18BC53F1002BA12A = {
 			isa = PBXGroup;
 			children = (
+				C474362D1CD17FA6002A09F5 /* TML Additions */,
 				3E5C084A19748EAA00969DD7 /* README.md */,
 				228DB9F518BC53F1002BA12A /* UIKitCatalog */,
 				228DB9F418BC53F1002BA12A /* Products */,
+				C37CA37754801038C7533B44 /* Pods */,
+				2EA5710251B5A7AF26FA2A6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,6 +158,14 @@
 				2200542318BC54EC002A6E8B /* CustomToolbarViewController.swift */,
 			);
 			name = "Toolbar View Controllers";
+			sourceTree = "<group>";
+		};
+		2EA5710251B5A7AF26FA2A6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F02ECCD470FAFDE3061558A /* Pods_UIKitCatalog.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3E1DA7601931CC99000114A9 /* View Controllers */ = {
@@ -217,6 +234,23 @@
 			name = "Base View Controllers";
 			sourceTree = "<group>";
 		};
+		C37CA37754801038C7533B44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13972DBA725848AEA70D6602 /* Pods-UIKitCatalog.debug.xcconfig */,
+				75C226EDBD76FD224D0FB2BC /* Pods-UIKitCatalog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C474362D1CD17FA6002A09F5 /* TML Additions */ = {
+			isa = PBXGroup;
+			children = (
+				C474362F1CD17FF4002A09F5 /* Bridging-Header.h */,
+			);
+			name = "TML Additions";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,9 +258,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 228DBA0B18BC53F1002BA12A /* Build configuration list for PBXNativeTarget "UIKitCatalog" */;
 			buildPhases = (
+				838588E396819A21C1E8DF9D /* Check Pods Manifest.lock */,
 				228DB9EF18BC53F1002BA12A /* Sources */,
 				228DB9F018BC53F1002BA12A /* Frameworks */,
 				228DB9F118BC53F1002BA12A /* Resources */,
+				1EED780466487B2C616C87F2 /* Embed Pods Frameworks */,
+				E54A1D38638CBCEF035C5023 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +317,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EED780466487B2C616C87F2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIKitCatalog/Pods-UIKitCatalog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		838588E396819A21C1E8DF9D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E54A1D38638CBCEF035C5023 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIKitCatalog/Pods-UIKitCatalog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		228DB9EF18BC53F1002BA12A /* Sources */ = {
@@ -422,23 +507,27 @@
 		};
 		228DBA0C18BC53F1002BA12A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13972DBA725848AEA70D6602 /* Pods-UIKitCatalog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog/UIKitCatalog-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/UIKitCatalog/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		228DBA0D18BC53F1002BA12A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C226EDBD76FD224D0FB2BC /* Pods-UIKitCatalog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/UIKitCatalog/UIKitCatalog-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/UIKitCatalog/Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -1,0 +1,31 @@
+PODS:
+  - MBProgressHUD (0.9.2)
+  - MPColorTools (1.6.1)
+  - NVHTarGzip (1.0.1)
+  - SSZipArchive (1.1)
+  - TMLKit (1.0.5):
+    - MBProgressHUD (~> 0.9)
+    - MPColorTools (~> 1.6)
+    - NVHTarGzip
+    - SSZipArchive
+
+DEPENDENCIES:
+  - TMLKit (from `https://github.com/translationexchange/tml-objc`)
+
+EXTERNAL SOURCES:
+  TMLKit:
+    :git: https://github.com/translationexchange/tml-objc
+
+CHECKOUT OPTIONS:
+  TMLKit:
+    :commit: f3a9a451f7b25a30cd5d436b6e5b5af81cee840f
+    :git: https://github.com/translationexchange/tml-objc
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MPColorTools: a5d2a09fc44750aea0366f666aa52c80565c0764
+  NVHTarGzip: 74cc227b902e5725900d37eb6d79b57e93005a73
+  SSZipArchive: de3d215ab73f87db627f81f2ce24f1731e3886c3
+  TMLKit: 6384035881ab47709ec8e3a5d0db2bdda9f1abcb
+
+COCOAPODS: 0.39.0
