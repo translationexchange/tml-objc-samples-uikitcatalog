@@ -4,6 +4,7 @@
 use_frameworks!
 
 target 'UIKitCatalog' do
-    pod 'TMLKit', :git => 'https://github.com/translationexchange/tml-objc'
+    pod 'TMLKit'
+    #pod 'TMLKit', :git => 'https://github.com/translationexchange/tml-objc'
 end
 
